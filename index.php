@@ -187,8 +187,8 @@
 										<span class="yell"><a href="#">Action</a></span>
 										<span class="orange"><a href="#">advanture</a></span>
 									</div>
-									<h1><a href="#">guardians of the<br>
-											galaxy <span>2015</span></a></h1>
+									<h1><a href="#"> Skyfall: Quantum of <br>
+											Spectre <span>2015</span></a></h1>
 									<div class="social-btn">
 										<a href="#" class="parent-btn"><i class="ion-play"></i> Watch Trailer</a>
 										<div class="hover-bnt">
@@ -202,22 +202,22 @@
 										</div>
 									</div>
 									<div class="mv-details">
-										<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
+										<p><i class="ion-android-star"></i><span>4.1</span> /5</p>
 										<ul class="mv-infor">
-											<li> Run Time: 141 min </li>
+											<li> Run Time: 148 min </li>
 											<li> Rated: PG-13 </li>
 											<li> Release: 1 May 2015</li>
 										</ul>
 									</div>
 									<div class="btn-transform transform-vertical">
-										<div><a href="moviesingle.html" class="item item-1 redbtn">more detail</a></div>
-										<div><a href="moviesingle.html" class="item item-2 redbtn hvrbtn">more detail</a></div>
+										<div><a href="moviesingle.php" class="item item-1 redbtn">more detail</a></div>
+										<div><a href="moviesingle.php" class="item item-2 redbtn hvrbtn">more detail</a></div>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-12 col-xs-12">
 								<div class="mv-img-2">
-									<a href="#"><img src="images/uploads/poster1.jpg" alt=""></a>
+									<a href="#"><img src="images/uploads/movie-single.jpg" alt=""></a>
 								</div>
 							</div>
 						</div>
@@ -235,7 +235,6 @@
 											galaxy <span>2015</span></a></h1>
 									<div class="social-btn">
 										<a href="#" class="parent-btn"><i class="ion-play"></i> Watch Trailer</a>
-										<a href="#" class="parent-btn"><i class="ion-heart"></i> Add to Favorite</a>
 										<div class="hover-bnt">
 											<a href="#" class="parent-btn"><i class="ion-android-share-alt"></i>share</a>
 											<div class="hvr-item">
@@ -247,7 +246,7 @@
 										</div>
 									</div>
 									<div class="mv-details">
-										<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
+										<p><i class="ion-android-star"></i><span>3.4</span> /5</p>
 										<ul class="mv-infor">
 											<li> Run Time: 2h21’ </li>
 											<li> Rated: PG-13 </li>
@@ -287,6 +286,12 @@
 						<li><a href="#tab4-h2"> #Most reviewed</a></li>
 					</ul>
 					<div class="tab-content">
+
+
+
+
+
+
 						<div id="tab1-h2" class="tab active">
 							<div class="row">
 								<div class="slick-multiItem2">
@@ -299,7 +304,7 @@
 												<a href="moviesingle.html"> Read more <i class="ion-android-arrow-dropright"></i> </a>
 											</div>
 											<div class="title-in">
-												<h6><a href="#">Interstellar</a></h6>
+												<h6><a href="#">Interstella.r</a></h6>
 												<p><i class="ion-android-star"></i><span>7.4</span> /10</p>
 											</div>
 										</div>
@@ -405,7 +410,22 @@
 								</div>
 							</div>
 						</div>
-						<div id="tab2-h2" class="tab">
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<!--  -->
+
+						<div id="tab2-h2" class="tab" style="margin-top: 3em;">
 							<div class="row">
 								<div class="slick-multiItem2">
 									<div class="slide-it">
@@ -481,7 +501,30 @@
 								</div>
 							</div>
 						</div>
-						<div id="tab3-h2" class="tab">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<div id="tab3-h2" class="tab" style="margin-top: 3em;">
 							<div class="row">
 								<div class="slick-multiItem2">
 									<div class="slide-it">
@@ -557,7 +600,31 @@
 								</div>
 							</div>
 						</div>
-						<div id="tab4-h2" class="tab">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<div id="tab4-h2" class="tab" style="margin-top: 3em;">
 							<div class="row">
 								<div class="slick-multiItem2">
 									<div class="slide-it">
@@ -621,6 +688,22 @@
 						</div>
 					</div>
 				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				<div class="title-hd">
 					<h2>on tv</h2>
 					<a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>

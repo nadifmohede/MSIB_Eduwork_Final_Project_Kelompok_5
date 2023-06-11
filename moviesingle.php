@@ -455,7 +455,7 @@
                                                     <h3>Related Movies To</h3>
                                                     <h2>Skyfall: Quantum of Spectre</h2>
                                                 </div>
-                                                <a href="#" class="redbtn">Write Review</a>
+                                                <a href="#" style="margin-right: 30px;" class="redbtn">Write Review</a>
                                             </div>
                                             <div class="topbar-filter">
                                                 <p>Found <span>56 reviews</span> in total</p>
