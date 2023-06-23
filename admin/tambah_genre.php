@@ -24,9 +24,7 @@
     <!-- Navbar Search-->
     <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
       <div class="input-group">
-        <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-        <button class="btn btn-primary" id="btnNavbarSearch" type="button">
-          <i class="fas fa-search"></i>
+        <i class="fas fa-search"></i>
         </button>
       </div>
     </form>
@@ -35,12 +33,10 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#!">Settings</a></li>
-          <li><a class="dropdown-item" href="#!">Activity Log</a></li>
           <li>
             <hr class="dropdown-divider" />
           </li>
-          <li><a class="dropdown-item" href="#!">Logout</a></li>
+          <li><a class="dropdown-item" href="../auth/logout.php">Logout</a></li>
         </ul>
       </li>
     </ul>
@@ -143,15 +139,15 @@
         </div>
         <div class="card mb-4">
           <div class="card-body">
-          <form action="proses_tambah_genre.php" method="post">
-                        <div class="form-group pb-3">
-                            <label>Nama Genre</label>
-                            <input type="text" name="judul_genre" class="form-control" placeholder="Masukkan Nama Genre">
-                        </div>
-                        <div class="form-group pb-3">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
+            <form action="proses_tambah_genre.php" method="post">
+              <div class="form-group pb-3">
+                <label>Nama Genre</label>
+                <input type="text" name="judul_genre" class="form-control" placeholder="Masukkan Nama Genre">
+              </div>
+              <div class="form-group pb-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
     </main>

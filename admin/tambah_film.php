@@ -1,5 +1,5 @@
 <?php
-  include('../database/koneksi.php');
+include('../database/koneksi.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,14 +18,14 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script>
-    $( function() {
-      $( "#date1" ).datepicker({
+    $(function() {
+      $("#date1").datepicker({
         dateFormat: "dd-mm-yy",
         changeMonth: true,
         changeYear: true,
         yearRange: '1900:+0'
       });
-    } );
+    });
   </script>
 
 </head>
@@ -41,9 +41,7 @@
     <!-- Navbar Search-->
     <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
       <div class="input-group">
-        <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-        <button class="btn btn-primary" id="btnNavbarSearch" type="button">
-          <i class="fas fa-search"></i>
+        <i class="fas fa-search"></i>
         </button>
       </div>
     </form>
@@ -52,12 +50,10 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#!">Settings</a></li>
-          <li><a class="dropdown-item" href="#!">Activity Log</a></li>
           <li>
             <hr class="dropdown-divider" />
           </li>
-          <li><a class="dropdown-item" href="#!">Logout</a></li>
+          <li><a class="dropdown-item" href="../auth/logout.php">Logout</a></li>
         </ul>
       </li>
     </ul>
@@ -162,65 +158,65 @@
           <div class="card-body">
             <form action="proses_tambah_film.php" method="post" enctype="multipart/form-data">
               <div class="form-group pb-3">
-                  <label>Nama Sutradara</label>
-                  <select name="id_sutradara" class="form-control">
-                      <option disabled selected>--PILIH SALAH SATU--</option>
-                      <?php 
-                      $sql = mysqli_query($koneksi, "SELECT id_sutradara, nama_sutradara FROM sutradara ORDER BY nama_sutradara ASC");
-                      while ($data = mysqli_fetch_array($sql)) {
-                      ?>
-                      <option value="<?= $data['id_sutradara'] ?>">
-                          <?= $data['nama_sutradara']." (ID Sutradara = ".$data['id_sutradara'].")" ?>
-                      </option>
-                      <?php } ?>
-                  </select>
-                </div>
-                <div class="form-group pb-3">
-                  <label>Genre</label>
-                  <select name="id_genre" class="form-control">
-                      <option disabled selected>--PILIH SALAH SATU--</option>
-                      <?php 
-                      $sql = mysqli_query($koneksi, "SELECT id_genre, judul_genre FROM genre ORDER BY judul_genre ASC");
-                      while ($data = mysqli_fetch_array($sql)) {
-                      ?>
-                      <option value="<?= $data['id_genre'] ?>">
-                          <?= $data['judul_genre']." (ID Genre = ".$data['id_genre'].")" ?>
-                      </option>
-                      <?php } ?>
-                  </select>
-                </div>
-                <div class="form-group  pb-3">
-                  <label>Judul Film</label>
-                  <input type="text" name="judul_film" class="form-control" placeholder="Masukkan Nama Film">
-                </div>
-                <div class="form-group pb-3">
-                  <label>Sinopsis</label>
-                  <textarea class="form-control" rows="5" name="sinopsis" placeholder="Masukkan sinopsis"></textarea>
-                </div>
-                <div class="form-group  pb-3">
-                  <label>Tahun Rilis</label>
-                  <input type="number" name="tahun_rilis" class="form-control" placeholder="Masukkan Tahun Rilis">
-                </div>
-                <div class="form-group pb-3">
-                  <label>Tanggal Rilis</label>
-                  <input type="text" id="date1" name="tanggal_rilis" class="form-control" placeholder="Masukkan Tanggal Rilis">
-                </div>
-                <div class="form-group pb-3">
-                  <label>Durasi Film</label>
-                  <input type="number" name="durasi_film" class="form-control" placeholder="Masukkan Durasi Film">
-                </div>
-                <div class="form-group pb-3">
-                  <label>File Poster</label>
-                  <input type="file" name="file_poster" class="form-control" placeholder="Masukkan File Poster Film">
-                </div>
-                <div class="form-group pb-3">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-              </form>
-            </div>
+                <label>Nama Sutradara</label>
+                <select name="id_sutradara" class="form-control">
+                  <option disabled selected>--PILIH SALAH SATU--</option>
+                  <?php
+                  $sql = mysqli_query($koneksi, "SELECT id_sutradara, nama_sutradara FROM sutradara ORDER BY nama_sutradara ASC");
+                  while ($data = mysqli_fetch_array($sql)) {
+                  ?>
+                    <option value="<?= $data['id_sutradara'] ?>">
+                      <?= $data['nama_sutradara'] . " (ID Sutradara = " . $data['id_sutradara'] . ")" ?>
+                    </option>
+                  <?php } ?>
+                </select>
+              </div>
+              <div class="form-group pb-3">
+                <label>Genre</label>
+                <select name="id_genre" class="form-control">
+                  <option disabled selected>--PILIH SALAH SATU--</option>
+                  <?php
+                  $sql = mysqli_query($koneksi, "SELECT id_genre, judul_genre FROM genre ORDER BY judul_genre ASC");
+                  while ($data = mysqli_fetch_array($sql)) {
+                  ?>
+                    <option value="<?= $data['id_genre'] ?>">
+                      <?= $data['judul_genre'] . " (ID Genre = " . $data['id_genre'] . ")" ?>
+                    </option>
+                  <?php } ?>
+                </select>
+              </div>
+              <div class="form-group  pb-3">
+                <label>Judul Film</label>
+                <input type="text" name="judul_film" class="form-control" placeholder="Masukkan Nama Film">
+              </div>
+              <div class="form-group pb-3">
+                <label>Sinopsis</label>
+                <textarea class="form-control" rows="5" name="sinopsis" placeholder="Masukkan sinopsis"></textarea>
+              </div>
+              <div class="form-group  pb-3">
+                <label>Tahun Rilis</label>
+                <input type="number" name="tahun_rilis" class="form-control" placeholder="Masukkan Tahun Rilis">
+              </div>
+              <div class="form-group pb-3">
+                <label>Tanggal Rilis</label>
+                <input type="text" id="date1" name="tanggal_rilis" class="form-control" placeholder="Masukkan Tanggal Rilis">
+              </div>
+              <div class="form-group pb-3">
+                <label>Durasi Film</label>
+                <input type="number" name="durasi_film" class="form-control" placeholder="Masukkan Durasi Film">
+              </div>
+              <div class="form-group pb-3">
+                <label>File Poster</label>
+                <input type="file" name="file_poster" class="form-control" placeholder="Masukkan File Poster Film">
+              </div>
+              <div class="form-group pb-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
           </div>
-      </main>
-    </div>
+        </div>
+    </main>
+  </div>
   <footer class="py-4 bg-light mt-auto">
     <div class="container-fluid px-4">
       <div class="d-flex align-items-center justify-content-between small">
